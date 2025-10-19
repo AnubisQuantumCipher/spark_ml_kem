@@ -1,0 +1,24 @@
+name = "spark_ml_kem"
+version = "1.0.0"
+description = "Pure SPARK Ada implementation of ML-KEM-1024 (FIPS 203, Kyber) post-quantum key encapsulation"
+licenses = ["Apache-2.0"]
+authors = ["AnubisQuantumCipher <sic.tau@pm.me>"]
+maintainers = ["AnubisQuantumCipher <sic.tau@pm.me>"]
+website = "https://github.com/AnubisQuantumCipher/spark_ml_kem"
+tags = ["post-quantum", "ML-KEM", "Kyber", "key-encapsulation", "lattice-cryptography", "SPARK", "FIPS-203"]
+project-files = ["spark_ml_kem.gpr"]
+
+long-description = """
+Formally-verifiable implementation of ML-KEM-1024 post-quantum key encapsulation mechanism using module-lattice cryptography, providing IND-CCA2 security against quantum adversaries.
+
+Features:
+- ML-KEM-1024 parameter set (Category 5 security)
+- Post-quantum IND-CCA2 security
+- Deterministic encapsulation
+- NTT-based polynomial arithmetic
+- SHAKE256 XOF for sampling
+- Formally verifiable SPARK contracts
+"""
+
+[[depends-on]]
+# No external dependencies - pure SPARK implementation
